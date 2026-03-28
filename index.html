@@ -14,13 +14,21 @@
 
 <!-- Header -->
 <header>
-    
+
 
   <div class="logo">Prins Singh</div>
+ 
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
   <nav>
     
     <ul>
          <!-- Social Icons -->
+    <a href="https://github.com/prins-web" target="_blank">
+  <i class="fab fa-github"></i>
+</a>
      <div class="social-icons">
     <a href="https://www.linkedin.com/in/prins-singh-811308249/" target="_blank">
       <i class="fab fa-linkedin"></i>
@@ -168,6 +176,16 @@ Outside of coding, I enjoy reading books, exploring new places, and watching mov
   <p>© 2025 Prins Singh | All Rights Reserved</p>
 </footer>
 
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.querySelector("nav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
+
 
